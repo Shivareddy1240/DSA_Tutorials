@@ -60,6 +60,49 @@ namespace DSA_Tutorials.LinkedList
             }
         }
 
+        public void AddInBetween(AnyType data, int StartNode)
+        {
+            Node<AnyType> newItem = new Node<AnyType>();
+            newItem.data = data;
+            if (head == null)
+            {
+                head = newItem;
+                tail = newItem;
+            }
+
+            else
+            {
+                Node<AnyType> current = head;
+                int currentNodePosition = 1;
+                while (currentNodePosition < StartNode && current != null)
+                {
+                    current = current.next;
+                    currentNodePosition++;
+                }
+                if(currentNodePosition == StartNode)
+                {
+                    if(current.next != null)
+                    {
+                        newItem.next = current.next;
+                    }
+                    current.next = newItem;
+                   
+                    if(current == tail)
+                    {
+                        tail = newItem;
+                    }
+                }
+                else
+                {
+                    tail.next = newItem;
+                    tail = newItem;
+                }
+
+
+            }
+        }
+
+
         public void ReadAll()
         {
             Node<AnyType> currentNode = head;

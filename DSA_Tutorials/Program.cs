@@ -36,12 +36,12 @@ class Program
         //doubleLinkedList.AddFirst(100);
         //doubleLinkedList.ReadForward();
         //doubleLinkedList.ReadReverse();
-        DoubleLinkedList<int> doubleLinkedList = new DoubleLinkedList<int>();
-        doubleLinkedList.AddInBetween(1, 1);
-        doubleLinkedList.AddInBetween(2, 1);
-        doubleLinkedList.AddInBetween(3, 1);
-        doubleLinkedList.AddInBetween(4, 1);
-        doubleLinkedList.ReadForward();
+        SimpleLinkedListGenerics<int> simpleLinkedListGenerics = new SimpleLinkedListGenerics<int>();
+        simpleLinkedListGenerics.AddInBetween(1, 1);
+        simpleLinkedListGenerics.AddInBetween(2, 1);
+        simpleLinkedListGenerics.AddInBetween(3, 1);
+        simpleLinkedListGenerics.AddInBetween(4, 1);
+        simpleLinkedListGenerics.ReadAll();
 
 
     }
