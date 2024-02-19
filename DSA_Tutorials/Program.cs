@@ -27,14 +27,22 @@ class Program
         //simpleLinkedListGenerics.AddFirst(0);
         //simpleLinkedListGenerics.ReadAll();
 
+        //DoubleLinkedList<int> doubleLinkedList = new DoubleLinkedList<int>();
+        //doubleLinkedList.AddLast(1);
+        //doubleLinkedList.AddLast(2);
+        //doubleLinkedList.AddLast(3);
+        //doubleLinkedList.AddLast(4);
+        //doubleLinkedList.AddFirst(0);
+        //doubleLinkedList.AddFirst(100);
+        //doubleLinkedList.ReadForward();
+        //doubleLinkedList.ReadReverse();
         DoubleLinkedList<int> doubleLinkedList = new DoubleLinkedList<int>();
-        doubleLinkedList.AddLast(1);
-        doubleLinkedList.AddLast(2);
-        doubleLinkedList.AddLast(3);
-        doubleLinkedList.AddLast(4);
-        doubleLinkedList.AddFirst(0);
-        doubleLinkedList.AddFirst(100);
+        doubleLinkedList.AddInBetween(1, 1);
+        doubleLinkedList.AddInBetween(2, 1);
+        doubleLinkedList.AddInBetween(3, 1);
+        doubleLinkedList.AddInBetween(4, 1);
         doubleLinkedList.ReadForward();
-        doubleLinkedList.ReadReverse();
+
+
     }
 }
