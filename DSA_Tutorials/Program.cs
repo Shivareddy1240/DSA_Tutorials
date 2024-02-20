@@ -1,4 +1,7 @@
-﻿namespace DSA_Tutorials.LinkedList;
+﻿
+using DSA_Tutorials.BinaryTreeExamples;
+
+namespace DSA_Tutorials.LinkedList;
 class Program
 {
     static void Main(string[] args)
@@ -36,12 +39,29 @@ class Program
         //doubleLinkedList.AddFirst(100);
         //doubleLinkedList.ReadForward();
         //doubleLinkedList.ReadReverse();
-        SimpleLinkedListGenerics<int> simpleLinkedListGenerics = new SimpleLinkedListGenerics<int>();
-        simpleLinkedListGenerics.AddInBetween(1, 1);
-        simpleLinkedListGenerics.AddInBetween(2, 1);
-        simpleLinkedListGenerics.AddInBetween(3, 1);
-        simpleLinkedListGenerics.AddInBetween(4, 1);
-        simpleLinkedListGenerics.ReadAll();
+        //SimpleLinkedListGenerics<int> simpleLinkedListGenerics = new SimpleLinkedListGenerics<int>();
+        //simpleLinkedListGenerics.AddInBetween(1, 1);
+        //simpleLinkedListGenerics.AddInBetween(2, 1);
+        //simpleLinkedListGenerics.AddInBetween(3, 1);
+        //simpleLinkedListGenerics.AddInBetween(4, 1);
+        //simpleLinkedListGenerics.ReadAll();
+
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.Add(15);
+        binaryTree.Add(10);
+        binaryTree.Add(5);
+        binaryTree.Add(12);
+        binaryTree.Add(24);
+        binaryTree.Add(22);
+        binaryTree.Add(30);
+        binaryTree.Add(11);
+
+
+        binaryTree.Search(24);
+        binaryTree.DisplayTree();
+        binaryTree.Remove(24);
+        binaryTree.Remove(15);
+        binaryTree.DisplayTree();
 
 
     }
