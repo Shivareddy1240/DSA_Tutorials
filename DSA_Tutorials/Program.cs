@@ -46,23 +46,29 @@ class Program
         //simpleLinkedListGenerics.AddInBetween(4, 1);
         //simpleLinkedListGenerics.ReadAll();
 
-        BinaryTree binaryTree = new BinaryTree();
-        binaryTree.Add(15);
-        binaryTree.Add(10);
-        binaryTree.Add(5);
-        binaryTree.Add(12);
-        binaryTree.Add(24);
-        binaryTree.Add(22);
-        binaryTree.Add(30);
-        binaryTree.Add(11);
+        //BinaryTree binaryTree = new BinaryTree();
+        //binaryTree.Add(15);
+        //binaryTree.Add(10);
+        //binaryTree.Add(5);
+        //binaryTree.Add(12);
+        //binaryTree.Add(24);
+        //binaryTree.Add(22);
+        //binaryTree.Add(30);
+        //binaryTree.Add(11);
 
 
-        binaryTree.Search(24);
-        binaryTree.DisplayTree();
-        binaryTree.Remove(24);
-        binaryTree.Remove(15);
-        binaryTree.DisplayTree();
+        //binaryTree.Search(24);
+        //binaryTree.DisplayTree();
+        //binaryTree.Remove(24);
+        //binaryTree.Remove(15);
+        //binaryTree.DisplayTree();
 
-
+        Graph.Graph g = new Graph.Graph(6);
+        g.AddEdge(1,2);
+        g.AddEdge(2, 3);
+        g.AddEdge(2, 4);
+        g.AddEdge(3,1);
+        g.AddEdge(5,6);
+        g.BFS(1);
     }
 }
